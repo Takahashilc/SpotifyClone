@@ -1,0 +1,36 @@
+@import 'table';
+@import 'variaveis';
+
+:host{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    
+
+    ::-webkit-scrollbar{
+        width: 7px;
+
+        &-thumb{
+            background-color: rgba($cor-primaria, .2);
+            border-radius: 10px;
+        }
+
+        &-track{
+            background: transparent;
+        }
+    }
+
+    
+    .lista{
+        padding: 0px 50px;
+        width: 100%;
+        padding-bottom: 20px;
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    
+    .painel-direito{
+        height: 100vh;
+    }
+}
